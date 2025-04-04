@@ -6,27 +6,28 @@ html {
 }
 
 :root {
-  --footer-text: white;
-  --text-color: white;
-  --hover-color: grey;
-  --btn-primary-color: #867f7f;
-  --primary-color: #000000;
-  --primary-color-dark: #3c3c3c;
-  --secondary-color: rgb(0, 0, 0);
-  --text-dark: #f6f8fa;
-  --text-light: #93dafb;
-  --extra-light: #000000;
-  --max-width: 1000px; /* Reduced from 1200px to match light mode */
-  --max-cards-width:70vw;
-  --clr:#484848;
+  --footer-text: black;
+  --text-color: black;
+  --hover-color: #3685fb;
+  --btn-primary-color: #3685fb;
+  --primary-color: #3685fb;
+  --primary-color-dark: #0d213f;
+  --secondary-color: #ffffff;
+  --text-dark: #0d213f;
+  --text-light: #767268;
+  --extra-light: #ffffff;
+  --max-width: 1000px;
+  --max-cards-width: 70vw;
+  --clr: #cfcdcd;
 }
+
 .projects__card > img{
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
 }
 
 
-.dark-mode {
+.light-mode {
   --footer-text: white;
   --text-color: black;
   --hover-color: #3685fb;
@@ -42,7 +43,7 @@ html {
   
 }
 
-.dark-theme .your-class {
+.light-theme .your-class {
   background-color: #000000;
   color: #fff;
   border: 1px solid #444;
