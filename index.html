@@ -8,10 +8,14 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="canvas.css">
-    <script>
+    <script> 
       var swiper = new Swiper('.swiper-container', {
         slidesPerView: 1, // Default for small screens
         spaceBetween: 10,
@@ -22,7 +26,7 @@
         },
         navigation: {
           nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          prevEl: '.swiper-button- prev',
         },
         breakpoints: {
           640: {
@@ -65,19 +69,14 @@
     
     <header>
       <div class="section__container header__container" >
-        <div class="header__image">
-          <img src="header-1.webp" alt="header" />
-          <img src="header-2.webp" alt="header" />
-        </div>
         <div class="header__content">
           <div>
-            <p class="sub__header" style="color: aliceblue;">Hi, I am</p>
+            <p class="sub__header" style="color: black;">Hi, I am</p>
             <h1>Vaibhav Vishwakarma</h1>
             <p class="section__subtitle">
-              I am a passionate Computer Science major with a keen interest in cutting-edge technologies like augmented and virtual reality.<br /> My academic journey has been shaped by hands-on projects, ranging from developing responsive user interfaces in React to training computer vision models for real-world applications like aggression detection.<br /> I enjoy solving complex problems, building innovative solutions, and am driven by a desire to make technology more accessible and impactful. I am always eager to explore new challenges, learn, and grow in the ever-evolving tech landscape.
+              I am a dedicated web programmer with a strong foundation in core Computer Science subjects like Operating Systems, Computer Networks, and Computer Architecture.<br /> My learning journey has been powered by building full-stack projects—ranging from creating dynamic, responsive web apps to integrating real-time features and system-level optimizations.<br /> I thrive on solving challenging problems, crafting impactful digital experiences, and continuously pushing myself to bridge theory with practical innovation. I’m always excited to take on new challenges, learn deeply, and contribute meaningfully in the ever-growing world of technology.
             </p>
             <div class="action__btns">
-              <button class="btn" ><a href="Resume.pdf">Resume</a></button>
               <div class="story">
                 <div class="video__image">
                   <img src="header-1.webp" alt="story" />
@@ -85,8 +84,13 @@
                 </div>
                 <span>Video Introduction</span>
               </div>
+              <button class="btn" ><a href="Resume.pdf">Resume</a></button>
             </div>
           </div>
+        </div>
+        <div class="header__image">
+          <img src="header-2.webp" alt="header" />
+          <img src="header-1.webp" alt="header" />
         </div>
       </div>
     </header>
@@ -95,32 +99,24 @@
       <div><center>
         <h2 class="section__title" >Experiences</h2>
         <p class="section__subtitle">
-          "Check out my experiences, where I’ve worked on innovative solutions, collaborated with talented teams, and applied my skills in AI, machine learning, and web development to solve real-world challenges. 🚀💡"</p>
+          "Explore my journey through hackathons, GDSC events, and platforms like SAP and AWS, where I’ve built creative solutions, tackled real-world problems, and sharpened my skills in web development, cloud, cybersecurity, and AI. 🚀💡"</p>
           </center>
       </div><br><br><br><br><br>
       <center class="timeline" style="align-items: center;">
         
-        <div class="timeline-content">
-          <div class="timeline-period">September 2023</div>
-          <div class="portfolio__card1">
-            <img src="datasci.webp" alt="Data Science Hackathon" />
-            <div class="portfolio__details1">
-              <p class="portfolio__subtitle1">DSC Hackathon</p>
-              <p class="portfolio__title1">Applied ML techniques to analyze datasets, building predictive models using Python and TensorFlow.</p>
-            </div>
-          </div>
-        </div>
+        
         
         <div class="timeline-content">
           <div class="timeline-period">january 2024</div>
           <div class="portfolio__card1">
-            <img src="ctf.webp" alt="CTF Event" />
+            <img src="ctf.png" alt="CTF Event" />
             <div class="portfolio__details1">
               <p class="portfolio__subtitle1">Capture the Flag (CTF) Event</p>
               <p class="portfolio__title1">Solved cryptography, reverse engineering, and web exploitation challenges, improving ethical hacking skills.</p>
             </div>
           </div>
         </div>
+       
         <div class="timeline-content">
           <div class="timeline-period">December 2024</div>
           <div class="portfolio__card1">
@@ -142,6 +138,16 @@
             </div>
           </div>
         </div>
+        <div class="timeline-content">
+          <div class="timeline-period">September 2023</div>
+          <div class="portfolio__card1">
+            <img src="datasci.webp" alt="Data Science Hackathon" />
+            <div class="portfolio__details1">
+              <p class="portfolio__subtitle1">DSC Hackathon</p>
+              <p class="portfolio__title1">Applied ML techniques to analyze datasets, building predictive models using Python and TensorFlow.</p>
+            </div>
+          </div>
+        </div>
         
         <div class="timeline-content">
           <div class="timeline-period">Febreuary 2025</div>
@@ -157,7 +163,7 @@
         <div class="timeline-content">
           <div class="timeline-period">March 2025</div>
           <div class="portfolio__card1">
-            <img src="aws.webp" alt="New Hackathon" />
+            <img src="aws.png" alt="New Hackathon" />
             <div class="portfolio__details1">
               <p class="portfolio__subtitle1">AWS Hackathon</p>
               <p class="portfolio__title1">Worked on an innovative tech solution, enhancing problem-solving and collaboration skills under tight deadlines.</p>
@@ -179,7 +185,7 @@
             <div class="projects__details">
               <p class="projects__title">Am I Debarred? <br> AttendanceWebApp</p>
               <p class="projects__description">
-                A JavaScript webpage, served by a Python Uvicorn server, accurately tracks attendance based on the timetable, helping students monitor their presence and avoid debarment due to low attendance or missed sessions.
+                A JavaScript webpage, served by a Python Uvicorn server, accurately tracks attendance based on the timetable, helping students monitor their presence and avoid debarment due to low attendance or missed sessions.<br><br><br><br>
               </p><br /><br />
               <div class="rating">Difficulty - <i class="ri-star-fill"></i> 4.8</div>
               <div class="projects__price">
@@ -195,7 +201,7 @@
             <div class="projects__details">
               <p class="projects__title">Group Chat Application</p>
               <p class="projects__description">
-                Our React group chat app enables real-time communication with a responsive UI. WebSockets handle live messaging, while Firebase manages authentication. API keys are secured using environment variables, keeping them hidden from public access.<br>
+                Our React group chat app enables real-time communication with a responsive UI. WebSockets handle live messaging, while Firebase manages authentication. API keys are secured using environment variables, keeping them hidden from public access.<br><br><br>
               </p><br /><br /><br />
               <div class="rating">Difficulty - <i class="ri-star-fill"></i> 4.7</div>
               <div class="projects__price">
@@ -213,7 +219,7 @@
             <div class="projects__details">
               <p class="projects__title">Quizz App</p>
               <p class="projects__description">
-                Our React quiz app lets users choose from programming, geography, math, and entertainment categories. Users can set the number of questions, with real-time scoring and seamless navigation for an engaging experience.
+                Our React quiz app lets users choose from programming, geography, math, and entertainment categories. Users can set the number of questions, with real-time scoring and seamless navigation for an engaging experience.<br><br><br>
               </p><br /><br /><br /><br />
               <div class="rating">Difficulty - <i class="ri-star-fill"></i> 4.5</div>
               <div class="projects__price">
@@ -230,7 +236,7 @@
               <div class="projects__details">
                 <p class="projects__title">Interactive Canvas Drawing Tool</p>
                 <p class="projects__description">
-                  This interactive drawing tool lets users create art with freehand or shapes like rectangles, circles, and triangles. It features adjustable brush sizes, color selection, live text input, and an intuitive interface for creative expression, making it suitable for artists of all levels.<br><br>
+                  This interactive drawing tool lets users create art with freehand or shapes like rectangles, circles, and triangles. It features adjustable brush sizes, color selection, live text input, and an intuitive interface for creative expression, making it suitable for artists of all levels.<br><br><br><br><br>
                 </p><br /><br />
                 <div class="rating">Difficulty -   <i class="ri-star-fill"></i> 4.4</div>
                 <div class="projects__price">
@@ -246,11 +252,11 @@
             <div class="projects__details">
               <p class="projects__title">Swift Notes App</p>
               <p class="projects__description">
-                Sticky Notes is a simple and interactive web app for creating and managing notes. Click to add a new note, and double-click to remove one. Customize notes with different colors and organize your thoughts effortlessly, making it perfect for quick ideas and reminders.<br><br><br>
+                Sticky Notes is a simple and interactive web app for creating and managing notes. Click to add a new note, and double-click to remove one. Customize notes with different colors and organize your thoughts effortlessly, making it perfect for quick ideas and reminders.<br><br><br><br><br><br><br><br>
               </p>
               <div class="rating">Difficulty - <i class="ri-star-fill"></i> 3.8</div>
               <div class="projects__price">
-                <div class="price">Technologies: Dart, Python, Flutter, Arduino ide, Flask</div>
+                <div class="price">Technologies: React.JS , HTML ,CSS</div>
                 <a href="https://vaibhavishwakarma.github.io/StickyNotes/"><button class="btn">View Project</button></a>
               </div>
             </div>
@@ -261,7 +267,7 @@
               <div class="projects__details">
                 <p class="projects__title">Shopping Cart Calculator</p>
                 <p class="projects__description">
-                  A React Shopping Cart Calculator app dynamically calculates the total cost, including taxes and discounts, as users add or remove items. It ensures accurate billing and provides a smooth, interactive shopping experience for customers.<br><br><br><br>
+                  A React Shopping Cart Calculator app dynamically calculates the total cost, including taxes and discounts, as users add or remove items. It ensures accurate billing and provides a smooth, interactive shopping experience for customers.<br><br><br><br><br><br><br><br>
                 </p>
                 <div class="rating">Difficulty - <i class="ri-star-fill"></i> 3.8</div>
                 <div class="projects__price">
@@ -272,7 +278,7 @@
             </div>
         </div>
         <div class="view__all">
-          <button class="btn">View All</button>
+          <!-- <button class="btn">View All</button> -->
         </div>
       </div>
     </section>
@@ -285,18 +291,25 @@
           <div><center>
             <h2 class="section__title" >Skills</h2>
             <p class="section__subtitle">
-              A versatile set of technical skills empowers me to create innovative solutions. From crafting responsive user interfaces to training AI models, I have the expertise to turn complex challenges into seamless experiences. Explore the capabilities that define my work.🚀💡
+               My development journey has been shaped by practical projects—from building responsive, component-based UIs with React to designing efficient RESTful APIs and optimizing application performance.<br /> I enjoy turning complex ideas into seamless user experiences, writing clean and maintainable code, and building scalable solutions. I'm always eager to learn new technologies, take on challenging problems, and grow in the ever-evolving web development landscape.
             </p>
           </div></center>
           <div class="portfolio__nav">
-            <span><i class="ri-arrow-left-s-line"></i></span>
-            <span><i class="ri-arrow-right-s-line"></i></span>
+            <!-- <span><i class="ri-arrow-left-s-line"></i></span>
+            <span><i class="ri-arrow-right-s-line"></i></span> -->
           </div>
         </div>
+
+        <section>
+          <br>
+          <br>
+          <br>
+    
+        </section>
         <div class="portfolio__grid">
           
           <div class="portfolio__card1">
-            <img src="skillwd (1).webp" alt="portfolio" />
+            <img src="webdev.png" alt="portfolio" />
             <div class="portfolio__details1">
               <p class="portfolio__subtitle1">Web Development</p>
               <p class="portfolio__title1">Experienced in creating responsive and dynamic web interfaces using React, HTML, CSS, and Node.js.
@@ -305,21 +318,21 @@
             </div>
           </div>
           <div class="portfolio__card1">
-            <img src="skillml.webp" alt="portfolio" />
+            <img src="ml.png" alt="portfolio" />
             <div class="portfolio__details1">
               <p class="portfolio__subtitle1">Machine Learning and AI</p>
               <p class="portfolio__title1">Hands-on experience in training computer vision models using TensorFlow and OpenCV for real-world applications.</p>
             </div>
           </div>  
           <div class="portfolio__card1">
-            <img src="skill1.webp" alt="portfolio" />
+            <img src="prog.png" alt="portfolio" />
             <div class="portfolio__details1">
               <p class="portfolio__subtitle1">Programming Languages</p>
               <p class="portfolio__title1">Proficient in Python, JavaScript, and C++ for building scalable and efficient applications.</p>
             </div>
           </div>
           <div class="portfolio__card1">
-            <img src="skillag.webp" alt="portfolio" />
+            <img src="algo.png" alt="portfolio" />
             <div class="portfolio__details1">
               <p class="portfolio__subtitle1">Problem-Solving and Algorithms</p>
               <p class="portfolio__title1">Strong foundation in data structures and algorithms for optimizing solutions to complex challenges.</p>
@@ -328,7 +341,7 @@
           
           
           <div class="portfolio__card1">
-            <img src="skilldb.webp" alt="portfolio" />
+            <img src="dbms.png" alt="portfolio" />
             <div class="portfolio__details1">
               <p class="portfolio__subtitle1">Database Management</p>
               <p class="portfolio__title1">Knowledgeable in working with MySQL and MongoDB to design and manage structured and unstructured data.</p>
@@ -341,8 +354,19 @@
               <p class="portfolio__title1">Adept at using tools like Jest and Postman for ensuring software quality and debugging efficiently.</p>
             </div>
           </div>
+
+
           <div class="portfolio__card1">
-            <img src="skillgt.webp" alt="portfolio" />
+            <img src="api.png" alt="portfolio" />
+            <div class="portfolio__details1">
+              <p class="portfolio__subtitle1">API Integration</p>
+              <p class="portfolio__title1">Expertise in designing and consuming RESTful APIs for seamless communication between software components.</p>
+            </div>
+          </div>
+
+
+          <div class="portfolio__card1">
+            <img src="git.png" alt="portfolio" />
             <div class="portfolio__details1">
               <p class="portfolio__subtitle1">Version Control</p>
               <p class="portfolio__title1">Skilled in using Git and GitHub for collaborative software development and version management.</p>
@@ -350,18 +374,12 @@
           </div>
           
 
-          <div class="portfolio__card1">
-            <img src="skillap.webp" alt="portfolio" />
-            <div class="portfolio__details1">
-              <p class="portfolio__subtitle1">API Integration</p>
-              <p class="portfolio__title1">Expertise in designing and consuming RESTful APIs for seamless communication between software components.</p>
-            </div>
-          </div>
+          
         </div>
       </div>
     </section>
 
-    <section class="gallary" id="reviewd">
+    <!-- <section class="gallary" id="reviewd">
       <div class="section__container gallary__container">
         <div class="image__gallary">
           <div class="gallary__col">
@@ -371,6 +389,13 @@
             <img src="gallery-2.webp" alt="gallary" />
             <img src="gallery-3.webp" alt="gallary" /> 
       </div>
+    </section> -->
+
+    <section>
+      <br>
+      <br>
+      <br>
+
     </section>
 
     <section class="feedback" id="add_reviewd">
