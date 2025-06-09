@@ -9,20 +9,18 @@ import {
   MapPin,
   Linkedin,
   Github,
-  Twitter,
   Instagram,
-  Globe,
   ExternalLink,
   Award,
   BookOpen,
   Briefcase,
   GraduationCap,
-  FileBadge2,
   Album,
   Text
 } from "lucide-react"
+import Image from "next/image"
 
-let colors = ["red" ,"green" , "blue" , "orange","purple" , "brown" , "grey"]
+const colors = ["red" ,"green" , "blue" , "orange","purple" , "brown" , "grey"]
 
 const NAME = "Vaibhav Vishwakarma" ,
       ROLE = "Data Scientist | ML | Full-Stack Engineer",
@@ -52,26 +50,34 @@ const NAME = "Vaibhav Vishwakarma" ,
           "description":"Re-Create & formulate your Time Table, months ahead, for vacations and holidays. Specially made with love for Vit students.",
           "tech_stack":["JavaScript", "FastAPI"], 
           "key_points":["easy drag-drop courses" , "a red table indicates debared status" , "100+ visits till day"]
-        },
+        }
       ]
       ,
       CERTIFICATES= [
         {
         "link":"https://learn.deeplearning.ai/accomplishments/5a3a4f2c-25d2-48d6-9a1b-21395c36e928",
         "title":"Multi AI Agent Systems with crewAI",
-        },
-        {
-          "link":"https://www.hackerrank.com/certificates/iframe/61d2f65be40c",
-          "title":"Rest API",
-        },
-        {
+        "subtitle":"",
+        "expiry":""
+      },
+      {
+        "link":"https://www.hackerrank.com/certificates/iframe/61d2f65be40c",
+        "title":"Rest API",
+        "subtitle":"",
+        "expiry":""
+      },
+      {
         "link":"https://www.hackerrank.com/certificates/iframe/12bef5a2bc48",
         "title":"Python",
-        },
-        {
+        "subtitle":"",
+        "expiry":""
+      },
+      {
         "link":"https://www.hackerrank.com/certificates/iframe/31b84083c4e0",
         "title":"JavaScript",
-        },
+        "subtitle":"",
+        "expiry":""
+        }
         
     ],
     MINI_PROJECTS = [
@@ -102,23 +108,26 @@ const NAME = "Vaibhav Vishwakarma" ,
           "description":"Interprete the most-viewed section of any YT video, trim and share multiple-reels on your social media handles in less than 10 clicks.",
           "tech_stack":["Selenium","moviepy","openCV"], 
           "key_points":["gained 10k+ views on Instagram profile" , "experienced extensive Data Extraction process"]
-      },
+      }
       
     ],
     ACHIEVEMENTS = [
       {
         "name":"Completed British Airways Data Science Virtual Internship",
         "link":"https://drive.google.com/drive/folders/1nVfbJAxQaE74ZvcNtHSBEVdl3osCLjJq?usp=sharing",
-        "description":"Processed SkyTrax reviews, presented a executive-summary & designed model with 94% precision for chance of flight booking"
+        "description":"Processed SkyTrax reviews, presented a executive-summary & designed model with 94% precision for chance of flight booking",
+        "mention":""
       },
       {
         "name":"Best Global Rank of 1307 (Contest 166) & 1400+ Rating",
-        "link":"https://www.codechef.com/users/keen_deed_80"
+        "link":"https://www.codechef.com/users/keen_deed_80",
+        "mention":""
       },
       {
         "name":"100+ DSA Questions over LeetCode & GFG",
-        "link":"https://leetcode.com/u/vaibhavjs709/"
-      },
+        "link":"https://leetcode.com/u/vaibhavjs709/",
+        "mention":"" 
+      }
     ],
     CURRENTLY = ["🚀 Building DeepLeaning Models",
                     "📚 Learning Advanced Mathematics",
@@ -176,12 +185,12 @@ export default function HarvardResume() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="w-32 h-32 bg-gray-200 rounded-full mx-auto mb-4 flex items-center justify-center overflow-hidden ">
-                  <img src={PROFILE_IMG}  />
+                  <Image src={PROFILE_IMG} width={100} height={100} alt=""/>
                 </div>
 
                 <div className="text-sm text-gray-600 space-y-3">
-                  {ABOUTME.map((statement) => (
-                      <p>{statement}</p>
+                  {ABOUTME.map((statement,idx) => (
+                      <p key={idx} >{statement}</p>
                   ))}
                 </div>
 
@@ -237,8 +246,8 @@ export default function HarvardResume() {
               </h2>
 
               <div className="space-y-6">
-                {PROJECTS.map((project) => (
-                  <Card>
+                {PROJECTS.map((project,idx) => (
+                  <Card key={Number(idx)}>
                   <CardHeader>
                     <CardTitle className="flex items-center justify-between">
                       <span>{project.name}</span>
@@ -258,7 +267,7 @@ export default function HarvardResume() {
                     </div>
                     <div className="text-sm text-gray-500">
                     {project.key_points.map((highlight) =>(
-                      <p>• {highlight}</p>
+                      <p key = {highlight}>• {highlight}</p>
                     ))}
                     </div>
                   </CardContent>
@@ -276,8 +285,8 @@ export default function HarvardResume() {
               </h2>
 
               <div className="space-y-6">
-                {MINI_PROJECTS.map((project) => (
-                  <Card>
+                {MINI_PROJECTS.map((project,idx) => (
+                  <Card key={Number(idx)}>
                   <CardHeader>
                     <CardTitle className="flex items-center justify-between">
                       <span>{project.name}</span>
@@ -294,8 +303,8 @@ export default function HarvardResume() {
                       )):""}
                     </div>
                     <div className="text-sm text-gray-500">
-                    {project.key_points?project.key_points.map((highlight) =>(
-                      <p>• {highlight}</p>
+                    {project.key_points?project.key_points.map((highlight,idx) =>(
+                      <p key = {idx}>• {highlight}</p>
                     )):""}
                     </div>
                   </CardContent>
@@ -313,10 +322,10 @@ export default function HarvardResume() {
 
               <div className="space-y-4">
                 {
-                  ACHIEVEMENTS.map((achievement) => {
+                  ACHIEVEMENTS.map((achievement,idx ) => {
                     const color = colors[(Math.floor(Math.random()*colors.length))%colors.length];           
                     return (
-                      <Card>
+                      <Card key={Number(idx)}>
                         <CardContent className="pv-3">
                           <div className="flex items-start gap-3">
                             <Award className={`w-5 h-5 text-${color}-500 mt-1`} />
@@ -345,10 +354,10 @@ export default function HarvardResume() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 
-                { CERTIFICATES.map((certificate) => {
+                { CERTIFICATES.map((certificate,idx) => {
                   const color = colors[(Math.floor(Math.random()*colors.length))%colors.length];           
                   return(
-                  <Card>
+                  <Card key={Number(idx)}>
                   <CardHeader>
                     <CardTitle >
                       {certificate.link?<a className="flex justify-end" href={certificate.link} target="_blank"><ExternalLink className="w-4 h-4 text-gray-400" ></ExternalLink></a>:""}
@@ -436,8 +445,8 @@ export default function HarvardResume() {
 
                 <div>
                   <h4 className="font-semibold mb-2">Currently</h4>
-                  {CURRENTLY.map((statement) => (
-                  <p className="text-sm text-gray-600">{statement}<br/></p>
+                  {CURRENTLY.map((statement,idx) => (
+                  <p key= {idx} className="text-sm text-gray-600">{statement}<br/></p>
                   ))}
                   </div>
               </CardContent>
