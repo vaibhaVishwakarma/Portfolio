@@ -27,7 +27,7 @@ const NAME = "Vaibhav Vishwakarma" ,
       EMAIL = "vaibhavofficial709@gmail.com",
       PHONE = "+91 9664250004",
       LOCATION = "Chennai, TN, India",
-      PROFILE_IMG = "/Profile.jpg",
+      PROFILE_IMG = "Profile.jpg",
       ABOUTME = [ "Passionate Machine Leaning Engineer & Full stack developer with 1+ year of experience doing data science and machine learning projects.",
                 "Strong foundation of algoriths, data structure, software engineering princiles, mathematics."] ,
       coreSkillList = ["data mining", "data storage", "data wrangling", "EDA", "model evalutation", "Computer Vision", "React.js", "RESTful API & Server" ],
@@ -185,7 +185,7 @@ export default function HarvardResume() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="w-32 h-32 bg-gray-200 rounded-full mx-auto mb-4 flex items-center justify-center overflow-hidden ">
-                  <Image src={PROFILE_IMG} width={100} height={100} alt=""/>
+                  <img src={PROFILE_IMG}  style = {{objectFit:"cover",transform:"scale(1.1)"}}  alt=""/>
                 </div>
 
                 <div className="text-sm text-gray-600 space-y-3">
