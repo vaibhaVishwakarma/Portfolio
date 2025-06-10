@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: "Vaibhav Vishwakarma Portfolio",
   description: "Describes my journey in tech and elobrates and presents my project. a place to connect to me",
   icons: {
-    icon: '/1.png',
+    icon: './favico.ico',
   },
 };
 

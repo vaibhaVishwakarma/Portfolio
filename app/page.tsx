@@ -27,8 +27,8 @@ const NAME = "Vaibhav Vishwakarma" ,
       EMAIL = "vaibhavofficial709@gmail.com",
       PHONE = "+91 9664250004",
       LOCATION = "Chennai, TN, India",
-      PROFILE_IMG = "Profile.jpg",
-      ABOUTME = [ "Passionate ML & DL Engineer with 1+ year of experience doing data science and machine learning projects.",
+      PROFILE_IMG = "/Profile.jpg",
+      ABOUTME = [ "Passionate Machine Leaning Engineer & Full stack developer with 1+ year of experience doing data science and machine learning projects.",
                 "Strong foundation of algoriths, data structure, software engineering princiles, mathematics."] ,
       coreSkillList = ["data mining", "data storage", "data wrangling", "EDA", "model evalutation", "Computer Vision", "React.js", "RESTful API & Server" ],
       techStackList = ["Python", "Scikit-Learn", "PyTorch", "React" ,"GCP", "Docker"],
@@ -41,7 +41,7 @@ const NAME = "Vaibhav Vishwakarma" ,
           "name":"AI Fixed Deposit Advisor & Calculator",
           "link":"https://vaibhavishwakarma.github.io/fixed_deposit_calc_QA/",
           "description":"Identify the best bank for Fixed Desposite via Graph. Ask Questions for Pre-Mature Withdrawal Charges, TDS, schemes for special age groups.",
-          "tech_stack":["NLP", "React", "Supabase" ,"Selenium" , "FastAPI" ], 
+          "tech_stack":["LLM","NLP", "React", "Supabase" ,"Selenium" , "FastAPI" ], 
           "key_points":["calculate return amount in 4 taps" , "discuss legal advice with AI" , "hands-free discussion"]
         },
         {
@@ -400,7 +400,7 @@ export default function HarvardResume() {
                     className="flex items-center gap-3 p-3 rounded-lg border hover:bg-gray-50 transition-colors"
                   >
                     <Linkedin className="w-5 h-5 text-blue-600" />
-                    <div>
+                    <div >
                       <p className="font-medium text-sm">LinkedIn</p>
                       <p className="text-xs text-gray-500">Professional Network</p>
                     </div>
