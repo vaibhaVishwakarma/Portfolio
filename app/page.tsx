@@ -185,7 +185,7 @@ export default function HarvardResume() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="w-32 h-32 bg-gray-200 rounded-full mx-auto mb-4 flex items-center justify-center overflow-hidden ">
-                  <img src={PROFILE_IMG}  style = {{objectFit:"cover",transform:"scale(1.1)"}}  alt=""/>
+                  <Image src={PROFILE_IMG}  style = {{objectFit:"cover",transform:"scale(1.1)"}}  alt=""/>
                 </div>
 
                 <div className="text-sm text-gray-600 space-y-3">
